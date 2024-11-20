@@ -28,7 +28,7 @@
   <project path="art" name="art" groups="pdk" remote="derp" />
   <project path="bionic" name="bionic" groups="pdk" remote="derp" />
   <project path="manifest" name="manifest" remote="derp" />
-
+  <project path="libcore" name="libcore" groups="pdk" remote="derp" />
   <!-- Bootable -->
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="derp" />
 
