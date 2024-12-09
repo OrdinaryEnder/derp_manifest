@@ -24,6 +24,7 @@
   <project path="art" name="art" groups="pdk" remote="derp" />
   <project path="bionic" name="bionic" groups="pdk" remote="derp" />
   <project path="development" name="development" groups="developers,pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="libcore" name="libcore" groups="pdk" remote="derp" revision="14"/>
   <project path="manifest" name="manifest" remote="derp" />
 
   <!-- Bootable -->
@@ -43,6 +44,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+   <project path="build/release" name="build_release" groups="pdk,tradefed" remote="derp" revision="14"/>
 
   <!-- Device -->
   <project path="device/derp/sepolicy" name="device_derp_sepolicy" remote="derp" />
@@ -67,7 +69,8 @@
   <project path="external/libcxx" name="external_libcxx" groups="pdk" remote="derp" />
   <project path="external/libnl" name="external_libnl" groups="pdk" remote="derp" />
   <project path="external/libvpx" name="external_libvpx" groups="pdk" remote="derp" />
-  <project path="external/mksh" name="external_mksh" remote="derp" />  
+  <project path="external/mksh" name="external_mksh" remote="derp"/>
+  <project path="external/robolectric" name="external_robolectric" groups="pdk" remote="derp" revision="14"/>
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="derp" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/webp" name="external_webp" groups="pdk,qcom_msm8x26" remote="derp" />
@@ -159,8 +162,7 @@
   <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/Flash" name="packages_apps_Flash" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/FlipFlap" name="packages_apps_FlipFlap" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/Glimpse" name="packages_apps_Glimpse" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" groups="pdk-fs" remote="derp"/>
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/Panic" name="packages_apps_Panic" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="derp" />
@@ -179,11 +181,13 @@
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/modules/HealthFitness" name="packages_modules_HealthFitness" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="packages/modules/IntentResolver" name="packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="derp" revision="14"/>
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" groups="pdk-fs" remote="derp" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="derp" revision="14"/>
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="derp" />
 
@@ -211,7 +215,7 @@
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/fontage" name="vendor_fontage" remote="derp" />
-  <project path="vendor/gms" name="DerpFest/vendor_gms" remote="gitlab" revision="14" clone-depth="1" />
+  <project path="vendor/gms" name="DerpFest/vendor_gms" remote="gitlab" revision="14" />
   <project path="vendor/overlay" name="vendor_overlay" remote="derp" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="derp" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="derp" revision="14" />
